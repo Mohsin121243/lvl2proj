@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/LHANDW.TTF);
+}
+@font-face{
+  font-family: logoFont;
+  src: url(fonts/ChocolateBarDemo.otf);
+}
+.navbar-brand{
+  font-family: logoFont;
+}
+
+h1 {
+  font-family: myFirstFont;
+  text-align: center;
+}
+.splashBody{
+  background-color:#FFA500;
+}
+#bd{
+  background-color: #FFA500;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 250px 100px 100px;
+    background-color: #d95b08;
+}
+
+.grid {
+  width: 1366px;
+  height: 768px;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background-color: #d95b08;
+  padding: 8px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.welcome{
+  font-size: 100px
+}
+.bottom {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: bottom-animation 2s infinite;
+}
+
+@keyframes bottom-animation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  margin-bottom: 20px;
+}
+
+.register-button {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.event-description {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #FF6B35;
+  color: cyan; 
+}
+
+.registered-events {
+  font-weight: bold;
+  margin-top: 10px;
+}
+#SG{
+  background-color: orange;
+}
+img {
+  border: 5px solid #555;
+}
+
