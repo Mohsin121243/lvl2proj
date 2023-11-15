@@ -19,6 +19,10 @@ h1 {
   font-family: myFirstFont;
   text-align: center;
 }
+h2 {
+  font-family: myFirstFont;
+  text-align: center;
+}
 .splashBody{
   background-color:#FFA500;
 }
@@ -27,11 +31,16 @@ h1 {
 }
 
 #grid {
-    display: grid;
-    grid-gap: 8px;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px 250px 100px 100px;
-    background-color: #d95b08;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: #FFA500;
+}
+#grid div:nth-of-type(4),
+#grid div:nth-of-type(5),
+#grid div:nth-of-type(6) {
+  grid-row: 2;
 }
 
 .grid {
@@ -107,8 +116,14 @@ p{
   font-weight: bold;
   margin-top: 10px;
 }
+#grid{
+  align-items: auto;
+}
 #SG{
   background-color: orange;
+}
+.special-guests {
+  text-decoration: underline;
 }
 img {
   border: 5px solid #555;

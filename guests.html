@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style></style>
+  <script src="script.js" async></script>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <a class="navbar-brand" href="#" style="color: white;">Navbar</a>
+    <a class="navbar-brand" href="#" style="color: white;">Savory Oasis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,10 +22,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="guests.html" style=" color: white;">Guests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html" style=" color: white;">Events</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -51,24 +55,44 @@
 </head>
 
 <body id="bd">
-  <h1 id="SG">Special Guests</h1>
+  <h1 class="special-guests">Special Guests</h1>
   <center>
   <div id="grid">
-    <div>
-
+    
+    <div class="grid-item">
+      <button id="gordonButton">
+      <h1>Gordon Ramsay</h1>
+      <img src = gordon.jpg style="width: 250px;">
+      </button>
+      <div id="gordonInfo"></div>
     </div>
-
-    <div>
-   
+    
+    <div class="grid-item"><button id="bobbyButton">
+      <h1>Bobby Flay</h1> 
+      <img src = bobbyflay.jpg style="width: 250px; height: auto;"></button>
+      <div id="bobbyInfo"></div>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div>
-    <div></div>
-    <div></div>
-    <div></div>
-  
+    
+    <div class="grid-item"><button id="guyButton">
+      <h1>Guy Fierri</h1>
+      <img src = guy.jpg style="width: 250px; height: auto;"></button>
+      <div id="guyInfo"></div>
+    </div>
+    
+    <div class="grid-item"><button id="rushButton"><h2>Chef Rush</h2>
+      <img src = rush.jpg style="width: 250px; height: auto;"></button>
+      <div id="rushInfo"></div>
+    </div>
+    <div class="grid-item"><button id="gbButton">
+      <h2>Golden Balance</h2> 
+      <img src = thegb.jpg style="width: 250px; height: auto;"></button>
+      <div id="gbInfo"></div>
+    </div>
+    <div class="grid-item"><button id="nickButton">
+      <h2>Nick Digiovanni</h2> 
+      <img src = nick.jpg style="width: 250px; height: auto;"></button>
+    <div id="nickInfo"></div></div>
+    <
   </div>
     </center>
 </body>
